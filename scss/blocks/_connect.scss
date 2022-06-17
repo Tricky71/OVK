@@ -1,0 +1,76 @@
+.connect__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 70px;
+  font-size: 32px;
+  font-weight: 300;
+  color: #222;
+  text-align: center;
+}
+
+.connect__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    &:hover .connect__image {
+      transform: scale(1.15);
+    }
+    &:hover .connect__tel {
+      color: $accent;
+    }
+}
+
+.connect__image {
+  width: 125px;
+  height: 125px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  border: 5px solid $accent;
+  transition: transform .5s ease;
+}
+
+.connect__name {
+  margin-bottom: 7px;
+  font-size: 17px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.connect__job {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+}
+
+.connect__tel {
+  margin: 0;
+  padding: 0;
+  color: #999;
+    & i {
+      margin-right: 5px;
+    }
+  @include transition;
+}
+
+.connect__tel span {
+  font-family: exo-o, sans-serif;
+  font-size: 17px;
+}
+
+@media (max-width: $tablet-width) {
+  .connect__title {
+    font-size: 28px;
+  }
+
+  .connect__item {
+    margin-bottom: 55px;
+    &--last {
+      margin-bottom: 0;
+    }
+  }
+}

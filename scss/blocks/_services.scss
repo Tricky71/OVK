@@ -1,0 +1,95 @@
+.services__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 90px;
+  font-weight: 300;
+  font-size: 34px;
+  color: #222;
+  text-align: center;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @include transition;
+    & .button--grey span {
+      margin-left: 10px
+    }
+    &:hover path {
+      fill: $accent!important;
+    }
+    &:hover .services__item-title::after {
+      width: 120px;
+      background-color: $accent;
+      transform: translateX(-60px);
+    }
+    &:hover .button--grey {
+      background-color: $accent;
+      color: #fff;
+      box-shadow: 0 3px 0 darken($accent, 20%);
+    }
+}
+
+.services__item-image {
+  width: 75px;
+  height: auto;
+  margin-bottom: 45px;
+    & path {
+    fill: #555!important;  
+    }
+}
+
+.services__item-title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 1px;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-25px);
+      background-color: #6666;
+      @include transition;
+    }
+}
+
+.services__item-info {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.services__item-button {
+  margin-top: auto;
+}
+
+@media (max-width: $tablet-width) {
+  .services__title {
+  margin-bottom: 50px;
+  font-size: 28px;
+}
+  
+  .services__item {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .services__item-button span {
+    display: none;
+  }
+}

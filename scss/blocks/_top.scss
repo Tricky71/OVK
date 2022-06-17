@@ -1,0 +1,26 @@
+.top {
+  position: fixed;
+  bottom: 38px;
+  right: -120px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  opacity: .4;
+  @include transition;
+    & .fa {
+      font-size: 32px;
+      color: $dark;
+    }
+    &:hover {
+      opacity: 1;
+      background-color: $accent;
+    }
+    &.active {
+      right: 12px;
+    }
+}

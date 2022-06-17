@@ -1,0 +1,22 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.preloader {
+  & .mouse-icon {
+    border-color: #fff;
+    cursor: default;
+    & .wheel {
+      background-color: #fff;
+    }
+  }
+}

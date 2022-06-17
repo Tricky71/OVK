@@ -1,0 +1,127 @@
+.top-line__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-line--bottom .top-line__wrapper a {
+  &:hover {
+    color: #d7dde2;
+  }
+}
+
+.top-line--bottom .top-line__phone {
+  & span, & i {
+  color: #acb6be;
+  }
+}
+
+.top-line--bottom .button .menu-toggle__inner {
+  background-color: #acb6be;
+}
+
+
+.top-line__logo {
+  width: 100px;
+  height: 50px;
+}
+
+.top-line__logo .logo--light path {
+    fill: $dark!important;
+}
+
+.top-line__logo .logo--dark path {
+    fill: #acb6be!important;
+}
+
+
+.top-line__menu {
+  display: block;
+}
+
+.top-line__menu a {
+  color: #7e91a4;
+    &:hover, &:active {
+      color: $dark;
+    }
+}
+
+@media (min-width: $desktop-width) {
+  .top-line__menu-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .top-line__wrapper {
+    position: relative;
+  }
+
+  .top-line .top-line__menu {
+    display: none;
+    padding: 20px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 130%;
+    flex-direction: column;
+    background-color: $dark;
+    color: lighten($dark, 30%);
+      & li {
+        margin-right: 0;
+        padding: 0;
+        width: 100%;
+          &.active a {
+            color: $accent;
+          }
+      }
+      & .main-menu__link {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+          &:hover {
+            background-color: $accent;
+            color: #fff;
+            text-decoration: none;
+          }
+          
+      }
+  }
+
+  .top-line__wrapper {
+    justify-content: end;
+  }
+
+  .top-line__logo {
+    margin-right: auto;
+  }
+
+  .top-line__phone {
+    margin-right: 60px;
+  }
+
+  .top-line__menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .top-line__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-line__logo, .top-line__phone {
+    margin: 0;
+  }
+
+  .top-line__logo {
+    margin-bottom: 20px;
+  }
+}
+  

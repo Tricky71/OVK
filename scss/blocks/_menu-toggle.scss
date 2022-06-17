@@ -1,0 +1,47 @@
+.menu-toggle {
+  &--on {
+    & .menu-toggle__inner::before {
+      display: none;
+      transition: all .5s ease;
+    }
+    & .menu-toggle__inner {
+      
+      transform: rotate(45deg);
+      transition: all .5s ease;
+    }
+    & .menu-toggle__inner::after {
+      transform: rotate(-90deg) translate(10px);
+      transition: all .5s ease;
+    }
+  }
+}
+
+.menu-toggle__inner {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 3px;
+  background-color: $dark;
+  border: none;
+  transition: all .5s ease;
+    &::before {
+      content: '';    
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: inherit;
+      left: 0; 
+      top: -10px;
+      transition: all .5s ease;
+    }
+    &::after {
+        content: '';    
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: inherit;
+        left: 0; 
+        bottom: -10px;
+        transition: all .5s ease;
+    }
+}

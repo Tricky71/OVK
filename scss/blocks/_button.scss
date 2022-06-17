@@ -1,0 +1,80 @@
+.button {
+    @include reset-button;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: all .25s ease;
+    letter-spacing: 3px;
+    font-weight: 600;
+    
+    &:active {
+      transform: translateY(2px);  
+    }
+    &--green {
+       display: block;
+       padding: 11px 20px;
+       font-size: 14px;
+       box-shadow: 0 3px 0 darken(#14b75a, 20%);
+       color: #ffffff;
+        background-color: #14b75a;
+        &:hover {
+          background-color: darken(#14b75a, 20%);
+          color: #ffffff;
+        }
+        &:active {
+          color: #ffffff;
+        }
+    }
+    &--transparent {
+        padding: 10px 20px;
+        display: block;
+        font-size: 14px;
+        color: $accent;
+        letter-spacing: 2px;   
+        border: 1px solid $accent;
+        box-shadow: 0 3px 0 $accent;
+        background-color: transparent;
+          &:hover {
+            background-color: $accent;
+            color: #fff;
+          }
+          &:active {
+          color: #ffffff;
+          }
+    }
+    &--grey {
+        padding: 10px 20px;
+        display: block;
+        font-size: 13px;
+        color: #222;
+        box-shadow: 0 3px 0 #d0d0d0;
+        background-color: #e8e8e8;
+          &:hover {
+            background-color: $accent;
+            color: #fff;
+            box-shadow: 0 3px 0 darken($accent, 20%);
+          }
+          &:active {
+          background-color: darken($accent, 30%);
+          }
+          
+    }
+    &--accent {
+       display: block;
+       padding: 11px 20px;
+       font-size: 14px;
+       box-shadow: 0 3px 0 darken($accent, 20%);
+       color: #ffffff;
+        background-color: $accent;
+        &:hover {
+          background-color: darken($accent, 20%);
+          color: #ffffff;
+        }
+        &:active {
+          color: #ffffff;
+        }
+    }
+    
+}
+    
+
+

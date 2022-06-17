@@ -1,0 +1,30 @@
+.offers__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.offers__info {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+  font-size: 19px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.offers__button {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: $mobile-width) {
+  .offers__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+}

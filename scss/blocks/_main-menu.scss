@@ -1,0 +1,32 @@
+.main-menu {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 10;
+}
+
+.main-menu__item {
+  padding: 12px 0;
+  margin-right: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      & .main-menu__link {
+        text-decoration: underline;
+      }
+    }
+}
+
+.main-menu__link {
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include transition;
+    &:hover, &:active {
+      text-decoration: underline;
+    }
+}
+

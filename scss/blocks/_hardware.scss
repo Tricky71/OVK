@@ -1,0 +1,113 @@
+.hardware__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+  font-size: 34px;
+  font-weight: 300;
+  color: #222;
+  text-align: center;
+}
+
+.hardware__list {
+  @include reset-list;
+  margin: 0;
+  padding: 0;
+}
+
+.hardware__item {
+  position: relative;
+  padding-bottom: 30px;
+  box-shadow: #d7d7d7 0 0 0 5px inset;
+  background-color: #f8f8f8;
+  @include transition;
+    &:hover {
+      box-shadow: $accent 0 0 0 5px inset;
+    }
+    &:hover .hardware__brand-title {
+      color: $accent;
+    }
+    &:hover .hardware__link {
+      background-color: $accent;
+      color: #fff;
+      box-shadow: 0 3px 0 darken($accent, 20%);
+    }
+}
+
+.hardware__logo {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hardware__logo img {
+  display: block;
+  & path {
+    fill: $accent;
+  }
+}
+
+.hardware__logo path {
+  fill: $accent!important;
+}
+
+.hardware__img {
+   position: absolute;
+   width: 70%;
+   top: 25px;
+   left: 15%;
+}
+
+.hardware__content {
+  padding: 0 15px;
+}
+
+.hardware__brand-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  color: #222;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hardware__info {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #444;
+  text-align: center;
+}
+
+.hardware__list .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.hardware__list button.owl-dot {
+  width: 14px;
+  height: 14px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background-color: #d7d7d7;
+    &.active {
+      background-color: $accent;
+    }
+}
+
+@media(max-width: $mobile-width) {
+  .hardware__title {
+    font-size: 28px;
+  }
+}
+
+
+
