@@ -12,7 +12,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
@@ -29,11 +28,9 @@
 
 <body>
 	<div class="preloader">
-		<!-- <div class="preloader__inner"> -->
-			<div class="mouse-icon">
-				<div class="wheel"></div>
-			</div>
-	
+		<div class="mouse-icon">
+			<div class="wheel"></div>
+		</div>
 	</div>
 	<header class="main-header" style="background-image: url(img/bg_top.jpg);">
 	  <div class="main-header__top top-line top-line--top clearfix">
@@ -44,13 +41,15 @@
 							<a href="#" class="top-line__logo" title="Главная страница">
 								<img src="img/logo.svg" alt="ОВК-Строй" class="header-title__logo logo logo--light img-responsive img-svg" width="100" height="50">
 							</a>
-							<ul class="top-line__menu main-menu">
-								<li class="main-menu__item active"><a href="#" class="main-menu__link">Главная</a></li>
-								<li class="main-menu__item"><a href="#" class="main-menu__link">Монтаж</a></li>
-								<li class="main-menu__item"><a href="#" class="main-menu__link">Проектирование</a></li>
-								<li class="main-menu__item"><a href="#" class="main-menu__link">Оборудование</a></li>
-								<li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
-							</ul>
+							<nav class="top-line__menu main-menu">
+                <ul>
+									<li class="main-menu__item active"><a href="#" class="main-menu__link">Главная</a></li>
+									<li class="main-menu__item"><a href="#">Монтаж</a></li>
+									<li class="main-menu__item"><a href="#">Проектирование</a></li>
+									<li class="main-menu__item"><a href="#">Оборудование</a></li>
+									<li class="main-menu__item"><a href="#">Контакты</a></li>
+							  </ul>
+							</nav>
 							<div class="top-line__phone contact-phone">
 								<div class="contact-phone__tel"><i class="fa fa-mobile"></i><span>+7 (495) 99-99-99</span></div>
 								<a href="#callback" class="contact-phone__call" data-form="Заказать обратный звонок: верхняя" data-text ="Заказать звонок">Заказать обратный звонок</a>
