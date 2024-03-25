@@ -46,5 +46,5 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 
 RewriteEngine on
 RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?yourdomain.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?https://tricky71.github.io/OVK/ [NC]
 RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
